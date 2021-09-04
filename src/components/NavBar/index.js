@@ -18,11 +18,7 @@ export default function NavBar() {
             <span> Nasa </span>
           </h1>
         </Link>
-
         <div className="a">
-          <Link to="/galaxy">
-            <button type="button" className="a">Les galaxies</button>
-          </Link>
           <Link to="/mars">
             <button type="button" className="a">Mars en Rover</button>
           </Link>

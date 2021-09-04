@@ -19,8 +19,7 @@ export default function App({loading}) {
   }
   return (
     <>
-    <h1>Nasa Image</h1>
-    <div>
+    <h1 className="main_title">Nasa Image</h1>
       <NavBar />
       <Switch>
         <Route exact path="/">
@@ -30,7 +29,6 @@ export default function App({loading}) {
           <Mars />
         </Route>
       </Switch>
-    </div>
     </>
   );
 }

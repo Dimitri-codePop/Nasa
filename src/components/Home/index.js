@@ -15,10 +15,11 @@ export default function Home() {
   }, []);
   return (
     <>
-      <h1>Nasa Image</h1>
-      <h2>{fetchImage.title}</h2>
-      <p>{fetchImage.explanation}</p>
-      <img src={fetchImage.hdurl} />
+    <figure className="picture__container">
+      <img src={fetchImage.hdurl} className="picture" />
+      <figcaption className="picture__title">{fetchImage.title}</figcaption>
+      <p className="picture__desc">{fetchImage.explanation}</p>
+    </figure>
     </>
   );
 }
