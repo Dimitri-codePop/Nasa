@@ -1,0 +1,23 @@
+.navbar__web__title{
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.navbar__web{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.navbar__web__button{
+  background-color: transparent;
+  color: #fff;
+}
+
+.navbar__web__button:hover{
+  color: #f0af4e;
+  transition: 0.33s;
+}

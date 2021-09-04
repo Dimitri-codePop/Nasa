@@ -18,11 +18,9 @@ export default function NavBar() {
             <span> Nasa </span>
           </h1>
         </Link>
-        <div className="a">
-          <Link to="/mars">
-            <button type="button" className="a">Mars en Rover</button>
+          <Link to="/mars" className="navbar__web__button">
+            Mars en Rover
           </Link>
-        </div>
       </>
     </nav>
   )
