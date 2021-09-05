@@ -11,9 +11,8 @@ body{
   width: 100%;
 }
 
-body::-webkit-scrollbar{
-  display: none
-}
+
+
 
 .main_title{
   padding: 0 0 2rem;
