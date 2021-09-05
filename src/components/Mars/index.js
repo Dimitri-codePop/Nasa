@@ -12,7 +12,7 @@ export default function Mars() {
     try {
       const yesterday = new Date((new Date()).valueOf() - 8000*60*60*24).toISOString().split('T')[0];
 
-      const result = await axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${yesterday}&api_key=TGw3yb3SYCjTaMtCghavGF0t5Nu0rCZh963TyHzw`);
+      const result = await axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${yesterday}&api_key=${process.env.REACT_APP_API_KEY}`);
       if (result.data.photos.length < 1) {
         setMessage('Aucune photo prise hier par notre copain le Rover. ');
       }

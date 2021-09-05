@@ -5,18 +5,15 @@ import PropTypes from 'prop-types';
 
 // == Import
 import './styles.css';
-import Loading from './Loading';
+
 import Home from 'src/components/Home';
 import NavBar from 'src/components/NavBar';
 import Mars from 'src/components/Mars';
 
 // == Composant
 
-export default function App({loading}) {
+export default function App() {
   
-  if (loading) {
-    return <Loading />;
-  }
   return (
     <>
     <h1 className="main_title">Nasa Image</h1>
