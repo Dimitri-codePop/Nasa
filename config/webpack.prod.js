@@ -30,7 +30,6 @@ module.exports = merge(common, {
             options: { importLoaders: 3 },
           },
           'postcss-loader',
-          'resolve-url-loader',
           {
             loader: 'sass-loader',
             options: {
@@ -48,6 +47,7 @@ module.exports = merge(common, {
     modules: true,
     builtAt: true,
     hash: true,
+    children: true
   },
 
   optimization: {
