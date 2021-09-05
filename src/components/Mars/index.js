@@ -10,7 +10,7 @@ export default function Mars() {
 
   useEffect(async () => {
     try {
-      const yesterday = new Date((new Date()).valueOf() - 8000*60*60*24).toISOString().split('T')[0];
+      const yesterday = new Date((new Date()).valueOf() - 1000*60*60*24).toISOString().split('T')[0];
 
       const result = await axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${yesterday}&api_key=${process.env.REACT_APP_API_KEY}`);
       if (result.data.photos.length < 1) {
