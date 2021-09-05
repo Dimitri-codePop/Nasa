@@ -41,7 +41,9 @@ export default function Mars() {
   return (
     <>
       {image}
+      <div className="container">
       <p className="message">{message}</p>
+      </div>
     </>
   );
 }
