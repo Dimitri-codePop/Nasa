@@ -18,7 +18,7 @@
   background-color: #c0c0c017;
   border-radius: 10%;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   max-width: 40%;
   margin: auto;
   margin-bottom: 4rem;
@@ -30,4 +30,14 @@
   line-height: normal;
   text-align: center;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 960px){
+  
+  .picture__title{
+    font-size: 1rem;
+  }
+  .picture__desc{
+    display: none;
+  }
 }
